@@ -1,4 +1,4 @@
-package com.example.chatasticcore;
+package lacrimae.chatasticcore;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
