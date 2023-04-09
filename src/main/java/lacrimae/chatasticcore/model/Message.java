@@ -10,7 +10,9 @@ import java.util.Date;
 @Getter
 @Setter
 public class Message {
-    private String sender;
+//    private Long id;
+//    private String receiver;
+//    private String sender;
     private String content;
-    private Date receivedAt;
+//    private Date sentAt;
 }

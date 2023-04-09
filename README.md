@@ -1,5 +1,15 @@
 # Chatastic Core
 
+## Design Notes
+
+### Storing Data
+
+To improve scalability and ensure fault tolerance, we utilize Kafka to store messages in a separate topic. A dedicated
+service retrieves messages from that topic and periodically saves them to MongoDB. This approach reduces the number of
+write operations to the database, improving scalability. Additionally, it guarantees that even if the server or
+application crashes, messages will not be lost. This design ensures high availability and fault tolerance in our chat
+application.
+
 ## WebSocket Connection Testing
 
 1. To test your WebSocket connection, make sure that you have `socat` installed on your machine. If you don't
