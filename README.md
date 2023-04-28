@@ -10,6 +10,12 @@ write operations to the database, improving scalability. Additionally, it guaran
 application crashes, messages will not be lost. This design ensures high availability and fault tolerance in our chat
 application.
 
+## Generate the Java code from proto
+
+   ```bash
+    protoc --java_out=. *.proto
+   ```
+
 ## WebSocket Connection Testing
 
 1. To test your WebSocket connection, make sure that you have `socat` installed on your machine. If you don't

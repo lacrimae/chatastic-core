@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package lacrimae.chatasticcore.kafka.proto;
+
+message UserMessage {
+  string uuid = 1;
+  string nickname = 2;
+}
